@@ -368,21 +368,40 @@ object {
     border-radius: 10px;
 }
 
-.gridBox1:hover::before {
+@keyframes hoverpics {
+   0% {visibility:visible;}
+   25% {visibility: hidden;}
+   100%{visibility: hidden;}
+
+}
+
+.gridBox1:before {
     height: 100%;
     content: 'Perfect Fits';
+    visibility: hidden;
+    animation: hoverpics 8s ease infinite;
+   
 }
-.gridBox2:hover::before {
+.gridBox2:before {
     height: 100%;
     content:'Original Designs';
+    animation: hoverpics 8s ease infinite;
+    visibility: hidden;
+    animation-delay: 2s;
 }
-.gridBox3:hover::before {
+.gridBox3:before {
     height: 100%;
     content:'Hand-Made';
+    visibility: hidden;
+    animation: hoverpics 8s ease infinite;
+    animation-delay: 4s;
 }
-.gridBox4:hover::before {
+.gridBox4:before {
     height: 100%;
     content:'Eco Friendly';
+    visibility: hidden;
+    animation: hoverpics 8s ease infinite;
+    animation-delay: 6s;
 }
 
 /*Third Page*/
