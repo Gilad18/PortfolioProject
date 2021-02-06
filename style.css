@@ -177,20 +177,20 @@ object {
 /*mobile hamburger navigation*/
 
 .mobileMenu {
-    width: 10%;
     height: 100%;
+    width: 20%;
     position: absolute;
-    top: 0;
-    right: 40%;
-
+    top: 1%;
+    right: 12%;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 8;
 }
 
 .togler {
-       height: 100%;
+        height: 100%;
         width: 100%;
         position: absolute;
         left: 0;
@@ -207,14 +207,14 @@ object {
 .mobileMenu i {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -5%;
     z-index: 8;
     color: var(--UniqueColor);
 }
 
 .mobileNav {
-    width: 1000%;
-    height: 1000%;
+    width: 900%;
+    height: 900%;
     background-color: var(--UniqueColor);
     display: flex;
     position: absolute;
@@ -222,8 +222,8 @@ object {
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
-    top: 0;
-    right: -110%;
+    top: -4%;
+    right: -22%;
     list-style: none;
     visibility: hidden;
 }
@@ -233,12 +233,9 @@ object {
     width: 100%;
     text-align: right;
     z-index: 9;
-    padding: 5px;
 }
 
 .mobileNav li {
-    width: 90%;
-    height: 15%;
     font-size: 18px;
     font-family: var(--headText);
 }
@@ -728,8 +725,10 @@ footer {
     .mobileMenu {
         visibility: visible;
     }
+
     .logo {
-        width: 15%;
+        width: 13%;
+        height: 9%;
     }
     .showcase h3 {
         margin-top: -40%;
@@ -738,11 +737,11 @@ footer {
 
     .showcase::before {
         height: 5%;
-        top: 35%;
+        top: 36%;
     }
     @keyframes strech{
         from {width: 0%;}
-        to {width: 56%;}
+        to {width: 68%;}
     }
     #about {
         flex-direction: column;
@@ -776,6 +775,7 @@ footer {
     .collectionGrid {
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: space-evenly;
     }
     .storesGrid {
         width: 70%;
@@ -800,19 +800,21 @@ footer {
         grid-column: 1;
         grid-row: 2;
         margin-top: 0;
+        height: 200%;
      }
      .custImage {
          margin-right: 0;
-         height: 80%;
+         height: 60%;
      }
      .custText {
-         height: 140%;
+         height: 100%;
+         font-size: 11px;
      }
 
      .social{
      grid-column: 1;
      grid-row: 3;
-     height: 25%;
+     height: 50%;
     } 
     select {
       width: 30%;
